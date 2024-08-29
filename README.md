@@ -9,6 +9,9 @@ Bomb Rush Cyberfunk tweaks.
 > [!WARNING]
 > This mod uses a custom config system that will not work with r2modman. You are expected to edit the config file by hand in a text editor. I am not going to help you if you struggle with the TOML syntax - it is heavily documented on the internet.
 
+> [!NOTE]
+> PSK01.net here, all credit goes to NotNite, all i did was add a shitty width parameter to the trails, might add more in the future i guess.
+
 Create a config file named  `PoloTweaks.toml` in your BepInEx config directory. The config is split into modules. Each module has an ID associated with it, an enabled toggle, and the config options (if any).
 
 ### `fov`
@@ -40,6 +43,7 @@ length = 0.5
 bone = "footr"
 color = "#FF0000D9"
 length = 0.5
+# width = 1
 # Make the trails only appear at a certain speed (in Unity units)
 # min_speed = 5
 ```
