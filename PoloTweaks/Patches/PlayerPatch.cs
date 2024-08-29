@@ -27,7 +27,7 @@ public class PlayerPatch {
                 }
 
                 var @new = bone.gameObject.AddComponent<TrailRenderer>();
-                @new.startWidth = orig.startWidth;
+                @new.startWidth = orig.startWidth * trail.Width;
                 @new.endWidth = orig.endWidth;
                 @new.minVertexDistance = orig.minVertexDistance;
                 @new.time = trail.Length;
