@@ -42,7 +42,9 @@ public class PlayerPatch {
                 @new.material.mainTexture = tex;
 
                 if (trail.MinSpeed.HasValue) {
-                    bone.gameObject.AddComponent<TrailSpeedChecker>().SpeedBarrier = trail.MinSpeed.Value;
+                    var obj = bone.gameObject.AddComponent<TrailSpeedChecker>();
+                    obj.SpeedBarrier = trail.MinSpeed.Value;
+                    if (trail.UsePlayerSpeed) obj.player = __instance;
                 }
             }
         }

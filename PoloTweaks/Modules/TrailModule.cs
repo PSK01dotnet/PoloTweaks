@@ -16,6 +16,8 @@ public class TrailModule() : Module("trail") {
         public Color Color { get; set; } = Color.white;
         public float Width { get; set; } = 1f;
         public float Length { get; set; } = 1;
+        
         public float? MinSpeed { get; set; } = null;
+        public bool UsePlayerSpeed { get; set; } = false;
     }
 }

@@ -48,6 +48,6 @@
     </ItemGroup>
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-        <Exec Command="xcopy /Y /I &quot;$(TargetDir)&quot; &quot;$(BRCPath)/BepInEx/plugins/PoloTweaks&quot;" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))'"/>
+        <Exec Command="xcopy /Y /I &quot;$(TargetDir)&quot; &quot;$(BepInExDirectory)/plugins/PoloTweaks&quot;" Condition="'$([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform($([System.Runtime.InteropServices.OSPlatform]::Windows)))'"/>
     </Target>
 </Project>
