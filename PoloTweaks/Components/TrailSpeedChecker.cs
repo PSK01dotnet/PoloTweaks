@@ -24,8 +24,6 @@ public class TrailSpeedChecker : MonoBehaviour {
             speed = (pos - this.lastPos).magnitude / Time.deltaTime;
         else
             speed = this.player.GetVelocity().magnitude;
-
-        Plugin.Log.Log(BepInEx.Logging.LogLevel.Info, $"Speed: {speed}");
         
         this.trail.emitting = speed > this.SpeedBarrier;
         this.lastPos = pos;
