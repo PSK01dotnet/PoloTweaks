@@ -10,7 +10,7 @@ Bomb Rush Cyberfunk tweaks.
 > This mod uses a custom config system that will not work with r2modman. You are expected to edit the config file by hand in a text editor. I am not going to help you if you struggle with the TOML syntax - it is heavily documented on the internet.
 
 > [!NOTE]
-> PSK01.net here, all credit goes to NotNite, all i did was add some shittily made things, might add more in the future i guess.
+> from rewind: all credit goes to NotNite, all i did was add some shittily made things, might add more in the future i guess.
 
 > [!IMPORTANT]
 > In the (currently latest) commit, you will need to set a `BepInExDirectory` in your environment variables.
